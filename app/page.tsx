@@ -47,7 +47,7 @@ export default function Home() {
       <section className={styles.top}>
         <div>
           <h1 className={styles.title}>テノ</h1>
-          <p className={styles.description}>test</p>
+          <p className={styles.description}>テスト</p>
         </div>
         <Image
           className={styles.bgimg}
