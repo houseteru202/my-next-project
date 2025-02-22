@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import ButtonLink from "@/app/_components/ButtonLink";
 import { News } from "@/app/_libs/microcms";
-import NewsList from "./_components/newsList";
+import NewsList from "./_components/NewsList";
 
 const data: {
   contents: News[];

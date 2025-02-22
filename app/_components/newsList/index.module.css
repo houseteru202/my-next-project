@@ -1,7 +1,6 @@
 .list {
   border-bottom: 1px solid var(--color-border-light);
 }
-
 .list:last-child {
   border-bottom: none;
 }
