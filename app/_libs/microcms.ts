@@ -44,4 +44,3 @@ export const getMembersList = async (queries?: MicroCMSQueries) => {
   });
   return listData;
 };
-7;
