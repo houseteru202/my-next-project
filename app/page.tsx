@@ -11,30 +11,12 @@ const data: {
   contents: [
     {
       id: "1",
-      title: "渋谷オフィスに移転しました。",
+      title: "BLACK MARKET vol.4 開催決定!!",
       category: {
         name: "更新情報",
       },
-      publishedAt: "2025/02/02",
-      createdAt: "2025/02/02",
-    },
-    {
-      id: "2",
-      title: "恵比寿オフィスに移転しました。",
-      category: {
-        name: "更新情報",
-      },
-      publishedAt: "2025/02/02",
-      createdAt: "2025/02/02",
-    },
-    {
-      id: "3",
-      title: "五反田オフィスに移転しました。",
-      category: {
-        name: "更新情報",
-      },
-      publishedAt: "2025/02/02",
-      createdAt: "2025/02/02",
+      publishedAt: "2025/04/01",
+      createdAt: "2025/04/01",
     },
   ],
 };
@@ -46,8 +28,7 @@ export default function Home() {
     <>
       <section className={styles.top}>
         <div>
-          <h1 className={styles.title}>テノ</h1>
-          <p className={styles.description}>テスト</p>
+          <h1 className={styles.title}>BLACK MARKET vol.4</h1>
         </div>
         <Image
           className={styles.bgimg}
