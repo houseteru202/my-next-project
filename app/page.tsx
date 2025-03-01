@@ -11,12 +11,21 @@ const data: {
   contents: [
     {
       id: "1",
+      title: "ラインナップ第1弾発表!!",
+      category: {
+        name: "更新情報",
+      },
+      publishedAt: "2125/04/01",
+      createdAt: "2125/04/01",
+    },
+    {
+      id: "2",
       title: "BLACK MARKET vol.4 開催決定!!",
       category: {
         name: "更新情報",
       },
-      publishedAt: "2025/04/01",
-      createdAt: "2025/04/01",
+      publishedAt: "2125/04/01",
+      createdAt: "2125/04/01",
     },
   ],
 };
