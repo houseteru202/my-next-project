@@ -80,8 +80,8 @@
 
   .bgimg {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -20%;
+    right: -30%;
     width: auto;
     height: 600px;
     object-fit: cover;
