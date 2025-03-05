@@ -65,7 +65,7 @@ export default async function Page() {
               />
               <dl>
                 <dt className={styles.name}>{member.name}</dt>
-                <dd className={styles.position}>{member.occupation}</dd>
+                {/* <dd className={styles.position}>{member.occupation}</dd> */}
                 <dd className={styles.profile}>{member.profile}</dd>
               </dl>
             </li>
