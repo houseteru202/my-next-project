@@ -6,9 +6,9 @@ export default function Footer() {
     <footer className={styles.footer}>
       <nav className={styles.nav}>
         <ul className={styles.items}>
-          <li className={styles.item}>
+          {/* <li className={styles.item}>
             <Link href="/about">about</Link>
-          </li>
+          </li> */}
           <li className={styles.item}>
             <Link href="/news">news</Link>
           </li>
@@ -17,7 +17,7 @@ export default function Footer() {
           </li>
         </ul>
       </nav>
-      <p className={styles.cr}>© SIMPLE. All Rights Reserved 2024</p>
+      <p className={styles.cr}>© houseteru202. All Rights Reserved 2025</p>
     </footer>
   );
 }
