@@ -15,11 +15,11 @@ export default function Article({ data }: Props) {
       {/* <p className={styles.description}>{data.description}</p> */}
       <div className={styles.meta}>
         <Category category={data.category} />
-        <Date date={data.publishedAt || data.createdAt} />
+        <Date date={data.publishedAt ?? data.createdAt} />
       </div>
       {data.thumbnail && (
         <Image
-          src={data.thumbnail?.url}
+          src={data.thumbnail.url}
           alt=""
           className={styles.thumbnail}
           width={data.thumbnail?.width}
