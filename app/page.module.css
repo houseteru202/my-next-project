@@ -127,6 +127,20 @@
   border-radius: var(--border-radius);
 }
 
+.mapLink {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #666;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* .mapLink:hover {
+  background-color: #1e90ff;
+} */
+
 @media (max-width: 1000px) {
   .news {
     width: calc(100% - 160px);

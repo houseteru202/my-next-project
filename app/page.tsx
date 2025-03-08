@@ -83,26 +83,46 @@ export default async function Home() {
                 MARKETは子供も大人も楽しめるネオ縁日。老舗銭湯たつの湯の駐車場で石神井界隈の個性豊かな店主達による年に一度のお祭りが今年も開催。たつの湯のお湯並みに熱い1日を体感せよ！
               </p>
               <dl className={styles.info}>
-                <dt className={styles.infoTitle}>開催日</dt>
+                <dt className={styles.infoTitle}>Date</dt>
                 <dd className={styles.infoDescription}>
-                  2025年X月X日 XX:00～XX:00
+                  2025年4月13日（日） 10:00～15:00
                 </dd>
               </dl>
               <dl className={styles.info}>
-                <dt className={styles.infoTitle}>開催地</dt>
+                <dt className={styles.infoTitle}>Place</dt>
                 <dd className={styles.infoDescription}>
-                  たつの湯[google map ※追ってリンクつける]
+                  たつの湯　
+                  <a
+                    href="https://maps.app.goo.gl/PQGufARQNVdQZnhdA"
+                    target="_blank"
+                    className={styles.mapLink}
+                  >
+                    google map
+                  </a>
                 </dd>
               </dl>
               <dl className={styles.info}>
-                <dt className={styles.infoTitle}>Instagram</dt>
+                <dt className={styles.infoTitle}>Foods</dt>
                 <dd className={styles.infoDescription}>
-                  black_market_syakujii ※追ってリンクつける
+                  店名1（商品1、商品2）/店名2（商品1、商品2）
                 </dd>
               </dl>
               <dl className={styles.info}>
-                <dt className={styles.infoTitle}>企画運営</dt>
-                <dd className={styles.infoDescription}>tree works tokyo</dd>
+                <dt className={styles.infoTitle}>Goods</dt>
+                <dd className={styles.infoDescription}>
+                  店名1（商品1、商品2）/店名2（商品1、商品2）/店名3（商品1、商品2）/店名4（商品1、商品2）/店名5（商品1、商品2）/店名6（商品1、商品2）
+                </dd>
+              </dl>
+              <dl className={styles.info}>
+                <dt className={styles.infoTitle}>Produce</dt>
+                <dd className={styles.infoDescription}>
+                  <a
+                    href="https://www.instagram.com/treeworks_tokyo/"
+                    target="_blank"
+                  >
+                    tree works tokyo
+                  </a>
+                </dd>
               </dl>
             </div>
           </div>
