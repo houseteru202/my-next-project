@@ -22,8 +22,8 @@ export default function Article({ data }: Props) {
           src={data.thumbnail.url}
           alt=""
           className={styles.thumbnail}
-          width={data.thumbnail?.width}
-          height={data.thumbnail?.height}
+          width={data.thumbnail.width}
+          height={data.thumbnail.height}
         />
       )}
       <div
