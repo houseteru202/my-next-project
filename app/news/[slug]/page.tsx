@@ -2,7 +2,7 @@ import Article from "@/app/_components/Article";
 import ButtonLink from "@/app/_components/ButtonLink";
 import { getNewsDetail } from "@/app/_libs/microcms";
 import styles from "./page.module.css";
-import { notFound } from "next/navigation";
+/* import { notFound } from "next/navigation"; */
 
 type Props = {
   params: {
@@ -11,7 +11,7 @@ type Props = {
 };
 
 export default async function Page({ params }: Props) {
-  const data = await getNewsDetail(params.slug).catch(notFound);
+  const data = await getNewsDetail(params.slug);
 
   return (
     <>
