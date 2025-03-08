@@ -64,8 +64,15 @@ export default async function Page() {
                 className={styles.image}
               />
               <dl>
-                <dt className={styles.name}>{member.name}</dt>
-                {/* <dd className={styles.position}>{member.occupation}</dd> */}
+                {/* <dt className={styles.name}>{member.name}</dt> */}
+                <a
+                  href={member.occupation}
+                  className={styles.name}
+                  target="_blank"
+                >
+                  {member.name}
+                </a>
+                <dd className={styles.position}>{member.item}</dd>
                 <dd className={styles.profile}>{member.profile}</dd>
               </dl>
             </li>

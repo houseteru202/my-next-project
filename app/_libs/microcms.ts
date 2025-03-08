@@ -9,6 +9,7 @@ export type Menber = {
   name: string;
   occupation: string;
   profile: string;
+  item: string;
   image: MicroCMSImage;
 } & MicroCMSListContent;
 
