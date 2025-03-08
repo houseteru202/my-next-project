@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link href="/" className={styles.logoLink}>
-        BLACK MARKET ←いいロゴがあれば差し替える
+        BLACK MARKET
         {/* <Image
           src="/BMS.jpg"
           alt="SIMPLE"
