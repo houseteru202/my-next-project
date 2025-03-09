@@ -4,14 +4,22 @@ import { getNewsDetail } from "@/app/_libs/microcms";
 import styles from "./page.module.css";
 import { notFound } from "next/navigation";
 
-type Props = {
+/* type Props = {
   params: {
     slug: string;
   };
+}; */
+type Props = {
+  params: Promise<{
+    slug: string;
+  }>;
 };
 
+/* export default async function Page({ params }: Props) {
+  const data = await getNewsDetail(params.slug).catch(notFound); */
+
 export default async function Page({ params }: Props) {
-  const data = await getNewsDetail(params.slug).catch(notFound);
+  const data = await getNewsDetail((await params).slug).catch(notFound);
 
   return (
     <>
