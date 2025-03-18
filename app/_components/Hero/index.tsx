@@ -17,8 +17,8 @@ export default function Hero({ title, sub }: Props) {
         className={styles.bgimg}
         src="/img-mv.jpg"
         alt=""
-        width={200}
-        height={200}
+        width={4000}
+        height={1200}
       />
     </section>
   );

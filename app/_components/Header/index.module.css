@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .logoLink {
@@ -16,7 +17,7 @@
 }
 
 .logo {
-  height: 24px;
+  height: 48px;
   width: auto;
 }
 

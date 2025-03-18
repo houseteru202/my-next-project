@@ -52,8 +52,7 @@ export default async function Home() {
           className={styles.bgimg}
           src="/img-mv.jpg"
           alt=""
-          /* width={4000} */
-          width={1200}
+          width={4000}
           height={1200}
         />
       </section>
