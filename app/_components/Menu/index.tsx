@@ -30,6 +30,15 @@ export default function Menu() {
               members
             </Link>
           </li>
+          <li>
+            <Link
+              href="https://www.instagram.com/black_market_shakujii/?igsh=MWlqb3B2OXhjZ2M1MQ%3D%3D#"
+              target="_blank"
+              onClick={close}
+            >
+              Instagram
+            </Link>
+          </li>
         </ul>
         <button className={cx(styles.button, styles.close)} onClick={close}>
           <Image

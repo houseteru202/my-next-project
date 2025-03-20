@@ -89,13 +89,21 @@ export default async function Home() {
               <dl className={styles.info}>
                 <dt className={styles.infoTitle}>開催地</dt>
                 <dd className={styles.infoDescription}>
-                  たつの湯　
+                  　
                   <a
                     href="https://maps.app.goo.gl/PQGufARQNVdQZnhdA"
                     target="_blank"
-                    className={styles.mapLink}
+                    /*                     className={styles.mapLink}*/
+                    className={styles.infoIconLayout}
                   >
-                    google map
+                    たつの湯
+                    <Image
+                      src="/google-maps.png"
+                      alt=""
+                      width={24}
+                      height={24}
+                      priority
+                    />{" "}
                   </a>
                 </dd>
               </dl>
@@ -127,7 +135,15 @@ export default async function Home() {
                   <a
                     href="https://www.instagram.com/treeworks_tokyo/"
                     target="_blank"
+                    className={styles.infoIconLayout}
                   >
+                    <Image
+                      src="/Instagram_Glyph_Black.png"
+                      alt=""
+                      width={18}
+                      height={18}
+                      priority
+                    />{" "}
                     treeworks tokyo
                   </a>
                 </dd>
@@ -201,13 +217,21 @@ export default async function Home() {
             <dl className={styles.info}>
               <dt className={styles.infoTitle}>開催地</dt>
               <dd className={styles.infoDescription}>
-                Welders Diner　
+                　
                 <a
                   href="https://maps.app.goo.gl/4qHXfrnwQA63pnoWA"
                   target="_blank"
-                  className={styles.mapLink}
+                  className={styles.infoIconLayout}
+                  /* className={styles.mapLink} */
                 >
-                  google map
+                  Welders Diner
+                  <Image
+                    src="/google-maps.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    priority
+                  />{" "}
                 </a>
               </dd>
             </dl>

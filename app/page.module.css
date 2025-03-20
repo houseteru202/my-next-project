@@ -110,6 +110,12 @@
   flex: 1;
 }
 
+.infoIconLayout {
+  display: inline-flex; /* 横並び配置 */
+  align-items: center; /* 縦の中央揃え */
+  gap: 8px; /* 画像とタイトルの間にスペース */
+}
+
 .list:last-child {
   border-bottom: none;
 }

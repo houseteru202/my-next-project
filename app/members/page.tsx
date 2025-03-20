@@ -70,9 +70,16 @@ export default async function Page() {
                   className={styles.name}
                   target="_blank"
                 >
+                  <Image
+                    src="/Instagram_Glyph_Black.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    priority
+                  />{" "}
                   {member.name}
                 </a>
-                <dd className={styles.position}>{member.item}</dd>
+                {/* <dd className={styles.position}>{member.item}</dd> */}
                 <dd className={styles.profile}>{member.profile}</dd>
               </dl>
             </li>

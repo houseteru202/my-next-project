@@ -15,9 +15,19 @@ export default function Footer() {
           <li className={styles.item}>
             <Link href="/members">members</Link>
           </li>
+          <li className={styles.item}>
+            <Link
+              href="https://www.instagram.com/black_market_shakujii/?igsh=MWlqb3B2OXhjZ2M1MQ%3D%3D#"
+              target="_blank"
+            >
+              Instagram
+            </Link>
+          </li>
         </ul>
       </nav>
-      <p className={styles.cr}>© houseteru202. All Rights Reserved 2025</p>
+      <p className={styles.cr}>
+        © black-market-syakujii. All Rights Reserved 2025
+      </p>
     </footer>
   );
 }
