@@ -186,7 +186,7 @@ export default async function Home() {
           </div>
 
           <Image
-            className={styles.hiringImg}
+            className={styles.aboutusImg}
             src="/tatsunoyu.jpg"
             alt=""
             width={960}
