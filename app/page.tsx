@@ -164,10 +164,7 @@ export default async function Home() {
             </p>
             <dl className={styles.info}>
               <dt className={styles.infoTitle}>営業時間</dt>
-              <dd className={styles.infoDescription}>
-                同日 13:00～22:00 <br />
-                ※平時は15:00～
-              </dd>
+              <dd className={styles.infoDescription}>同日 13:00～22:00</dd>
             </dl>
             <dl className={styles.info}>
               <dt className={styles.infoTitle}>住所</dt>
