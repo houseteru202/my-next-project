@@ -26,7 +26,7 @@ export default function Footer() {
         </ul>
       </nav>
       <p className={styles.cr}>
-        © black-market-syakujii. All Rights Reserved 2025
+        © black-market-shakujii. All Rights Reserved 2025
       </p>
     </footer>
   );
