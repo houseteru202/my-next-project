@@ -61,7 +61,7 @@ export default async function Home() {
         {/* <NewsList news={sliceData} /> */}
         <NewsList news={data.contents} />
         <div className={styles.newsLink}>
-          <ButtonLink href="/news">もっとみる</ButtonLink>
+          <ButtonLink href="/news">read more</ButtonLink>
         </div>
       </section>
       <div className={styles.aboutus}>
@@ -75,19 +75,19 @@ export default async function Home() {
               height={4000}
             />
             <div>
-              <h2 className={styles.sectionTitleEn}>Event Info</h2>
+              <h2 className={styles.sectionTitleEn}>Event Infomation</h2>
               <p className={styles.sectionDescription}>
                 BLACK
                 MARKETは子供も大人も楽しめるネオ縁日。老舗銭湯たつの湯の駐車場で石神井界隈の個性豊かな店主達による年に一度のお祭りが今年も開催。たつの湯のお湯並みに熱い1日を体感せよ！
               </p>
               <dl className={styles.info}>
-                <dt className={styles.infoTitle}>開催日</dt>
+                <dt className={styles.infoTitle}>日程</dt>
                 <dd className={styles.infoDescription}>
                   2025年4月13日（日） 10:00～15:00
                 </dd>
               </dl>
               <dl className={styles.info}>
-                <dt className={styles.infoTitle}>開催地</dt>
+                <dt className={styles.infoTitle}>会場</dt>
                 <dd className={styles.infoDescription}>
                   　
                   <a
@@ -110,22 +110,25 @@ export default async function Home() {
               <dl className={styles.info}>
                 <dt className={styles.infoTitle}>イベント</dt>
                 <dd className={styles.infoDescription}>
-                  11:30～ LIVE@脱衣所 (モッチェ永井&ヤゴト太一) <br />
-                  12:00～ TALKSHOW@浴場内 (たつの湯三代目&今田耕太郎)
+                  11:30～　LIVE@脱衣所 <br />
+                  　モッチェ永井&ヤゴト太一 <br />
+                  12:00～　TALKSHOW@浴場内 <br />
+                  　本橋正季(たつの湯三代目)&今田耕太郎(写真家)
                 </dd>
               </dl>
               <dl className={styles.info}>
                 <dt className={styles.infoTitle}>出店情報</dt>
-                <dd className={styles.infoDescription}>
+                {/*                 <dd className={styles.infoDescription}>
                   店名1（商品1、商品2）/店名2（商品1、商品2）/店名3（商品1、商品2）/店名4（商品1、商品2）
-                </dd>
+                </dd> */}
+                <dd className={styles.infoDescription}>comming soon...</dd>
               </dl>
               <dl className={styles.info}>
                 <dt className={styles.infoTitle}>ご注意事項</dt>
                 <dd className={styles.infoDescription}>
-                  <dl>ご来場は徒歩でお願いします。</dl>
+                  <dl>・ご来場は徒歩でお願いします。</dl>
                   <dl>
-                    駐車場/駐輪場はご利用頂けません。近隣の有料施設をご利用ください。
+                    ・駐車場/駐輪場はご利用頂けません。車でご来場の場合は近隣の駐車場をご利用ください。
                   </dl>
                 </dd>
               </dl>
@@ -157,14 +160,17 @@ export default async function Home() {
           <div>
             <h2 className={styles.sectionTitleEn}>Tatsunoyu</h2>
             <p className={styles.sectionDescription}>
-              1964年（昭和39年）創業のたつの湯。クラシックな佇まい。清潔感のある脱衣所と湯舟。
-              薪で沸かしたアッツアツのお湯に浸かれば、サウナいらずの整い間違いなし。
-              <br />
+              1964年（昭和39年）創業のたつの湯。浴槽1つのストロングスタイル。
+              薪で沸かした熱々のお湯に浸かれば、サウナいらずの整い間違いなし。
               イベント当日は13時よりオープン。
             </p>
             <dl className={styles.info}>
               <dt className={styles.infoTitle}>営業時間</dt>
-              <dd className={styles.infoDescription}>同日 13:00～22:00</dd>
+              <dd className={styles.infoDescription}>
+                火曜～金曜 14:00～22:00
+                <br />
+                土曜・日曜 13:00～22:00
+              </dd>
             </dl>
             <dl className={styles.info}>
               <dt className={styles.infoTitle}>住所</dt>
@@ -178,6 +184,14 @@ export default async function Home() {
                 <a href="https://1010nerima.com/tatsunoyu" target="_blank">
                   https://1010nerima.com/tatsunoyu
                 </a>
+              </dd>
+            </dl>
+            <dl className={styles.info}>
+              <dt className={styles.infoTitle}>備考</dt>
+              <dd className={styles.infoDescription}>
+                ・入浴料金は550円になります。
+                <br />
+                ・備え付けのシャンプー・ボディソープはございません。各自ご用意ください。
               </dd>
             </dl>
           </div>
@@ -203,16 +217,18 @@ export default async function Home() {
           <div>
             <h2 className={styles.sectionTitleEn}>After Party</h2>
             <p className={styles.sectionDescription}>
-              今年もAfterParty開催決定！！
-              銭湯あがりにグイっと行きたい方はもちろん、夜からでも楽しめる内容になっているので、Weldersへ全員集合！！
-              Entrance Free！！
+              今年もAfterPartyはWELDERSで開催決定！！
+              お風呂上りにグイっといくのはもちろん、夜からの参加も◎
+              DJ陣も要チェック。
             </p>
             <dl className={styles.info}>
-              <dt className={styles.infoTitle}>開催日</dt>
-              <dd className={styles.infoDescription}>同日 15:00～22:00</dd>
+              <dt className={styles.infoTitle}>日程</dt>
+              <dd className={styles.infoDescription}>
+                2025年4月13日（日） 15:00～22:00
+              </dd>
             </dl>
             <dl className={styles.info}>
-              <dt className={styles.infoTitle}>開催地</dt>
+              <dt className={styles.infoTitle}>会場</dt>
               <dd className={styles.infoDescription}>
                 　
                 <a
@@ -221,7 +237,7 @@ export default async function Home() {
                   className={styles.infoIconLayout}
                   /* className={styles.mapLink} */
                 >
-                  Welders Diner
+                  WELDERS DINER
                   <Image
                     src="/google-maps.png"
                     alt=""
@@ -233,19 +249,23 @@ export default async function Home() {
               </dd>
             </dl>
             <dl className={styles.info}>
+              <dt className={styles.infoTitle}>Food/Dirnk</dt>
+              <dd className={styles.infoDescription}>comming soon...</dd>
+            </dl>
+            <dl className={styles.info}>
               <dt className={styles.infoTitle}>DJs</dt>
-              <dd className={styles.infoDescription}>XXXXXX/YYYYYY/ZZZZZZ</dd>
+              <dd className={styles.infoDescription}>comming soon...</dd>
             </dl>
             <dl className={styles.info}>
               <dt className={styles.infoTitle}>ご注意事項</dt>
               <dd className={styles.infoDescription}>
-                <dl>小学生以上はワンドリンクご注文をお願いします。</dl>
-                <dl>ご注文は現金またはPayPayでお願いします。</dl>
-                <dl>飲食物のお持ち込みはご遠慮ください。</dl>
-                <dl>屋外での談笑はお控えください。</dl>
-                <dl>店内および店頭での喫煙はご遠慮ください。</dl>
+                <dl>・小学生以上はワンドリンクご注文をお願いします。</dl>
+                <dl>・ご注文は現金またはPayPayでお願いします。</dl>
+                <dl>・飲食物のお持ち込みはご遠慮ください。</dl>
+                <dl>・屋外での談笑はお控えください。</dl>
+                <dl>・店内および店頭での喫煙はご遠慮ください。</dl>
                 <dl>
-                  駐車場/駐輪場はございません。近隣の有料施設をご利用ください。
+                  ・駐車場/駐輪場はございません。近隣の有料施設をご利用ください。
                 </dl>
               </dd>
             </dl>
