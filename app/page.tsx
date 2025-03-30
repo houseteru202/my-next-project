@@ -164,16 +164,20 @@ export default async function Home() {
           <div>
             <h2 className={styles.sectionTitleEn}>Tatsunoyu</h2>
             <p className={styles.sectionDescription}>
-              1964年（昭和39年）創業のたつの湯。浴槽1つのストロングスタイル。
-              薪で沸かした熱々のお湯に浸かれば、サウナいらずの整い間違いなし。
-              イベント当日は13時よりオープン。
+              1965年（昭和40年）より、東京練馬の片隅で薪と井戸水での仕込にこだわる公衆浴場。
+              伝統の番台と熱めに沸かした大きな浴槽1つですが、ご自身の好きなアメニティをお持ち頂き、
+              純粋にお湯をお楽しみください。イベント当日は14時半よりオープン。
             </p>
+            <dl className={styles.info}>
+              <dt className={styles.infoTitle}>営業日</dt>
+              <dd className={styles.infoDescription}>火曜～日曜（月曜定休）</dd>
+            </dl>
             <dl className={styles.info}>
               <dt className={styles.infoTitle}>営業時間</dt>
               <dd className={styles.infoDescription}>
-                火曜～金曜 14:00～22:00
+                11月～05月： 14:00～22:30（最終受付22:00）
                 <br />
-                土曜・日曜 13:00～22:00
+                06月～10月： 15:00～22:30（最終受付22:00）
               </dd>
             </dl>
             <dl className={styles.info}>
