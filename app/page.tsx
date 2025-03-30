@@ -175,7 +175,7 @@ export default async function Home() {
             <dl className={styles.info}>
               <dt className={styles.infoTitle}>営業時間</dt>
               <dd className={styles.infoDescription}>
-                11月～05月： 14:00～22:30（最終受付22:00）
+                11月～05月： 14:30～22:30（最終受付22:00）
                 <br />
                 06月～10月： 15:00～22:30（最終受付22:00）
               </dd>
