@@ -121,7 +121,11 @@ export default async function Home() {
                 {/*                 <dd className={styles.infoDescription}>
                   店名1（商品1、商品2）/店名2（商品1、商品2）/店名3（商品1、商品2）/店名4（商品1、商品2）
                 </dd> */}
-                <dd className={styles.infoDescription}>comming soon...</dd>
+                <dd className={styles.infoDescription}>
+                  treeworks
+                  tokyo（plants、original-tshirts）/ヘアーサロンコマツ（床屋のいつものマッサージ、
+                  練馬〜区グッズ）/
+                </dd>
               </dl>
               <dl className={styles.info}>
                 <dt className={styles.infoTitle}>ご注意事項</dt>
