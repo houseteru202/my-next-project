@@ -110,10 +110,11 @@ export default async function Home() {
               <dl className={styles.info}>
                 <dt className={styles.infoTitle}>イベント</dt>
                 <dd className={styles.infoDescription}>
-                  11:30～　LIVE@脱衣所 <br />
-                  　モッチェ永井&ヤゴト太一 <br />
-                  12:00～　TALKSHOW@浴場内 <br />
+                  11:30～　TALKSHOW@浴場内 <br />
                   　本橋正季(たつの湯三代目)&今田耕太郎(写真家)
+                  <br />
+                  12:00～　LIVE@脱衣所 <br />
+                  　モッチェ永井&ヤゴト太一
                 </dd>
               </dl>
               <dl className={styles.info}>
