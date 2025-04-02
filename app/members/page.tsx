@@ -84,6 +84,51 @@ export default async function Page() {
               </dl>
             </li>
           ))}
+          <li className={styles.list}>
+            <Image
+              src="/mohenagai.jpg"
+              alt=""
+              width="1024"
+              height="1024"
+              className={styles.image}
+            />
+            <dl>
+              {/* <dt className={styles.name}>{member.name}</dt> */}
+              <a
+                href="https://www.instagram.com/yagoto_taichi/"
+                className={styles.name}
+                target="_blank"
+              >
+                <Image
+                  src="/Instagram_Glyph_Black.png"
+                  alt=""
+                  width={24}
+                  height={24}
+                  priority
+                />{" "}
+                yagoto_taichi
+              </a>
+              　
+              <a
+                href="https://www.instagram.com/mocche_nagai/"
+                className={styles.name}
+                target="_blank"
+              >
+                <Image
+                  src="/Instagram_Glyph_Black.png"
+                  alt=""
+                  width={24}
+                  height={24}
+                  priority
+                />{" "}
+                mocche_nagai
+              </a>
+              {/* <dd className={styles.position}>{member.item}</dd> */}
+              <dd className={styles.profile}>
+                モッチェ永井&ヤゴト太一で出演します！たつの湯脱衣所ステージで12時から！
+              </dd>
+            </dl>
+          </li>
         </ul>
       )}
     </div>

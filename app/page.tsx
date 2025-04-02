@@ -4,6 +4,7 @@ import { getNewsList } from "@/app/_libs/microcms";
 import { TOP_NEWS_LIMIT } from "@/app/_constants";
 import ButtonLink from "@/app/_components/ButtonLink";
 import NewsList from "./_components/NewsList";
+import Link from "next/link";
 
 /* import { News } from "@/app/_libs/microcms";
 
@@ -125,7 +126,10 @@ export default async function Home() {
                 <dd className={styles.infoDescription}>
                   treeworks
                   tokyo（plants、original-tshirts）/ヘアーサロンコマツ（床屋のいつものマッサージ、
-                  練馬〜区グッズ）/
+                  練馬〜区グッズ）/COMPACT41（インテリア、アートグッズ、ど素人が初めてやる占い？）/
+                  Flune（トートバック等物販、ホイップキーホルダー・ホイップピンワークショップ）
+                  <br />
+                  ※詳細は<Link href="/members">memberページ</Link>へ
                 </dd>
               </dl>
               <dl className={styles.info}>
