@@ -127,7 +127,9 @@ export default async function Home() {
                   treeworks
                   tokyo（plants、original-tshirts）/ヘアーサロンコマツ（床屋のいつものマッサージ、
                   練馬〜区グッズ）/COMPACT41（インテリア、アートグッズ、ど素人が初めてやる占い？）/
-                  Flune（トートバック等物販、ホイップキーホルダー・ホイップピンワークショップ）
+                  Flune（トートバック等物販、ホイップキーホルダー・ホイップピンワークショップ）/たつの湯（軽食、ドリンク）/BBQ
+                  Records（レコード、関連雑貨）/DIGWORKS&STEELTIC（レコード、古着、オリジナルTシャツ、指スケパーク＆ボード）/Thank
+                  you, Soul（7inchレコード、新品Tシャツ）
                   <br />
                   ※詳細は<Link href="/members">memberページ</Link>へ
                 </dd>
