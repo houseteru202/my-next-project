@@ -130,7 +130,10 @@ export default async function Home() {
                   Flune（トートバック等物販、ホイップキーホルダー・ホイップピンワークショップ）/たつの湯（軽食、ドリンク）/BBQ
                   Records（レコード、関連雑貨）/DIGWORKS&STEELTIC（レコード、古着、オリジナルTシャツ、指スケパーク＆ボード）/Thank
                   you,
-                  Soul（7inchレコード、新品Tシャツ）/DECOPiN（駄菓子、古着、オリジナルグッズ、らくがきブース）/fujitubo_lure（魚釣りゲーム、アパレルグッズ）
+                  Soul（7inchレコード、新品Tシャツ）/DECOPiN（駄菓子、古着、オリジナルグッズ、らくがきブース）/
+                  fujitubo_lure（魚釣りゲーム、アパレルグッズ）/phat_que（自家製スモークソーセージ）/Sci-Fi
+                  SOUND（音ゲー対決、音響機器、オリジナルグッズ）/hidenova（ステッカー＆オリジナルMIXセット）/SPPS（small
+                  packages）/今田耕太郎（写真集「東京銭湯」）
                   <br />
                   ※詳細は<Link href="/members">memberページ</Link>へ
                 </dd>

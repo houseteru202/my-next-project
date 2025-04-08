@@ -129,6 +129,54 @@ export default async function Page() {
               </dd>
             </dl>
           </li>
+          <li className={styles.list}>
+            <Image
+              src="/tatsunoyuimada_.jpg"
+              alt=""
+              width="1200"
+              height="900"
+              className={styles.image}
+            />
+            <dl>
+              {/* <dt className={styles.name}>{member.name}</dt> */}
+              <a
+                href="https://www.instagram.com/tatsunoutko/"
+                className={styles.name}
+                target="_blank"
+              >
+                <Image
+                  src="/Instagram_Glyph_Black.png"
+                  alt=""
+                  width={24}
+                  height={24}
+                  priority
+                />{" "}
+                たつの湯
+              </a>
+              　
+              <a
+                href="https://www.instagram.com/kotaroimada/"
+                className={styles.name}
+                target="_blank"
+              >
+                <Image
+                  src="/Instagram_Glyph_Black.png"
+                  alt=""
+                  width={24}
+                  height={24}
+                  priority
+                />{" "}
+                今田 耕太郎
+              </a>
+              {/* <dd className={styles.position}>{member.item}</dd> */}
+              <dd className={styles.profile}>
+                安心と気遣いをテーマに、たつの湯若旦那の銭湯に対する思いと、たつの湯の常連でもあり、被写体として
+                銭湯を見つめて来た今田耕太郎とのクロストークを開催します。
+                <br />
+                11:00～11:30は浴室内撮影可能となります。今田耕太郎と一緒に銭湯の写真に関する話をしましょう。銭湯の撮影方法についての質問にもお答えします。
+              </dd>
+            </dl>
+          </li>
         </ul>
       )}
     </div>
