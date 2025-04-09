@@ -133,7 +133,10 @@ export default async function Home() {
                   Soul（7inchレコード、新品Tシャツ）/DECOPiN（駄菓子、古着、オリジナルグッズ、らくがきブース）/
                   fujitubo_lure（魚釣りゲーム、アパレルグッズ）/phat_que（自家製スモークソーセージ）/Sci-Fi
                   SOUND（音ゲー対決、音響機器、オリジナルグッズ）/hidenova（ステッカー＆オリジナルMIXセット）/SPPS（small
-                  packages）/今田耕太郎（写真集「東京銭湯」）
+                  packages）/今田耕太郎（写真集「東京銭湯」）/望月
+                  重太朗（お灸、指圧）/Only A
+                  Few（ミニカーレース、オリジナルグッズ）/Ohayodo
+                  Bakery（パン、オリジナルグッズ）
                   <br />
                   ※詳細は<Link href="/members">memberページ</Link>へ
                 </dd>
