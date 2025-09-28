@@ -84,7 +84,7 @@ export default async function Home() {
               <dl className={styles.info}>
                 <dt className={styles.infoTitle}>日程</dt>
                 <dd className={styles.infoDescription}>
-                  2025年4月13日（日） 10:00～15:00
+                  2025年10月19日（日） 10:00～15:00
                 </dd>
               </dl>
               <dl className={styles.info}>
@@ -111,9 +111,9 @@ export default async function Home() {
               <dl className={styles.info}>
                 <dt className={styles.infoTitle}>イベント</dt>
                 <dd className={styles.infoDescription}>
-                  11:30～　TALKSHOW@浴場内 <br />
+                  {/*  11:30～　TALKSHOW@浴場内 <br />
                   　本橋正季(たつの湯三代目)&今田耕太郎(写真家)
-                  <br />
+                  <br />*/}
                   12:00～　LIVE@脱衣所 <br />
                   　モッチェ永井&ヤゴト太一
                 </dd>
@@ -124,7 +124,18 @@ export default async function Home() {
                   店名1（商品1、商品2）/店名2（商品1、商品2）/店名3（商品1、商品2）/店名4（商品1、商品2）
                 </dd> */}
                 <dd className={styles.infoDescription}>
-                  treeworks
+                  treeworks tokyo（plants、original-tshirts）/
+                  Flune（トートバック等物販、ホイップキーホルダー・ホイップピンワークショップ）/たつの湯（軽食、ドリンク）/BBQ
+                  Records（レコード、関連雑貨）/DIGWORKS&STEELTIC（レコード、古着、オリジナルTシャツ、指スケパーク＆ボード）/Thank
+                  you, Soul（7inchレコード、新品Tシャツ）/
+                  fujitubo_lure（魚釣りゲーム、アパレルグッズ）/phat_que（自家製スモークソーセージ）/Sci-Fi
+                  SOUND（音ゲー対決、音響機器、オリジナルグッズ）/hidenova（ステッカー＆オリジナルMIXセット）/SPPS（small
+                  packages）/今田耕太郎（写真集「東京銭湯」）/望月
+                  重太朗（お灸、指圧）/Only A
+                  Few（ミニカーレース、オリジナルグッズ）/Ohayodo
+                  Bakery（パン、オリジナルグッズ）
+                  <br />
+                  {/*treeworks
                   tokyo（plants、original-tshirts）/ヘアーサロンコマツ（床屋のいつものマッサージ、
                   練馬〜区グッズ）/COMPACT41（インテリア、アートグッズ、ど素人が初めてやる占い？）/
                   Flune（トートバック等物販、ホイップキーホルダー・ホイップピンワークショップ）/たつの湯（軽食、ドリンク）/BBQ
@@ -137,7 +148,7 @@ export default async function Home() {
                   重太朗（お灸、指圧）/Only A
                   Few（ミニカーレース、オリジナルグッズ）/Ohayodo
                   Bakery（パン、オリジナルグッズ）
-                  <br />
+                  <br /> */}
                   ※詳細は<Link href="/members">memberページ</Link>へ
                 </dd>
               </dl>
@@ -246,7 +257,7 @@ export default async function Home() {
             <dl className={styles.info}>
               <dt className={styles.infoTitle}>日程</dt>
               <dd className={styles.infoDescription}>
-                2025年4月13日（日） 15:00～22:00
+                2025年10月19日（日） 15:00～22:00
               </dd>
             </dl>
             <dl className={styles.info}>
