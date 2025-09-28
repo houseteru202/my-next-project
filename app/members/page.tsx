@@ -129,6 +129,7 @@ export default async function Page() {
               </dd>
             </dl>
           </li>
+          {/*
           <li className={styles.list}>
             <Image
               src="/tatsunoyuimada_.jpg"
@@ -138,7 +139,6 @@ export default async function Page() {
               className={styles.image}
             />
             <dl>
-              {/* <dt className={styles.name}>{member.name}</dt> */}
               <a
                 href="https://www.instagram.com/tatsunoutko/"
                 className={styles.name}
@@ -168,7 +168,6 @@ export default async function Page() {
                 />{" "}
                 今田 耕太郎
               </a>
-              {/* <dd className={styles.position}>{member.item}</dd> */}
               <dd className={styles.profile}>
                 安心と気遣いをテーマに、たつの湯若旦那の銭湯に対する思いと、たつの湯の常連でもあり、被写体として
                 銭湯を見つめて来た今田耕太郎とのクロストークを開催します。
@@ -177,6 +176,7 @@ export default async function Page() {
               </dd>
             </dl>
           </li>
+          */}
         </ul>
       )}
     </div>
