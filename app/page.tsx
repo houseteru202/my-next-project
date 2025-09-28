@@ -190,7 +190,7 @@ export default async function Home() {
             <p className={styles.sectionDescription}>
               1965年（昭和40年）より、東京練馬の片隅で薪と井戸水での仕込にこだわる公衆浴場。
               伝統の番台と熱めに沸かした大きな浴槽1つですが、ご自身の好きなアメニティをお持ち頂き、
-              純粋にお湯をお楽しみください。イベント当日は14時半よりオープン。
+              純粋にお湯をお楽しみください。イベント当日は15時よりオープン。
             </p>
             <dl className={styles.info}>
               <dt className={styles.infoTitle}>営業日</dt>
