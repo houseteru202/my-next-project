@@ -114,7 +114,7 @@ export default async function Home() {
                   {/*  11:30～　TALKSHOW@浴場内 <br />
                   　本橋正季(たつの湯三代目)&今田耕太郎(写真家)
                   <br />*/}
-                  12:00～　LIVE@脱衣所 <br />
+                  12:30～　LIVE@脱衣所 <br />
                   　モッチェ永井&ヤゴト太一
                 </dd>
               </dl>

@@ -125,7 +125,7 @@ export default async function Page() {
               </a>
               {/* <dd className={styles.position}>{member.item}</dd> */}
               <dd className={styles.profile}>
-                モッチェ永井&ヤゴト太一で出演します！たつの湯脱衣所ステージで12時から！
+                モッチェ永井&ヤゴト太一で出演します！たつの湯脱衣所ステージで12時半から！
               </dd>
             </dl>
           </li>
