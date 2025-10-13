@@ -132,7 +132,9 @@ export default async function Home() {
                   SOUND（音ゲー対決、音響機器、オリジナルグッズ）/hidenova（ステッカー＆オリジナルMIXセット）/SPPS（small
                   packages）/望月 重太朗（お灸、指圧）/Only A
                   Few（ミニカーレース、オリジナルグッズ）/Ohayodo
-                  Bakery（パン、オリジナルグッズ）
+                  Bakery（パン、オリジナルグッズ）/MAMEOS（サッカーボーリング）/深津
+                  康幸（ブランド古着、制作サンプル、古本）/すいすい
+                  粋酔（日本酒、スパークリングワイン、生ビール、太麺焼きそば）
                   <br />
                   {/*treeworks
                   tokyo（plants、original-tshirts）/ヘアーサロンコマツ（床屋のいつものマッサージ、
