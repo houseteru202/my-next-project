@@ -1,0 +1,50 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* ① 黒背景スタート */
+.overlay_black {
+  background-color: #000;
+}
+
+/* ① 黒 → 白へ遷移 */
+.overlay_white {
+  background-color: #fff;
+  transition: background-color 1.2s ease;
+}
+
+/* ② 白 → 透明へ遷移 */
+.overlay_fadeout {
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 1.6s ease;
+}
+
+/* ロゴ共通 */
+.logo {
+  width: min(400px, 80vw);
+  height: auto;
+  opacity: 0;
+}
+
+/* ① ロゴ非表示スタート */
+.logo_black {
+  opacity: 0;
+}
+
+/* ① ロゴ浮かび上がる */
+.logo_white {
+  opacity: 1;
+  transition: opacity 1.2s ease;
+}
+
+/* ② ロゴフェードアウト */
+.logo_fadeout {
+  opacity: 0;
+  transition: opacity 1.6s ease;
+}

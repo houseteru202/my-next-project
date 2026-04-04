@@ -1,45 +1,137 @@
+/* ===== デスクトップ：横並びナビ ===== */
 .items {
   display: flex;
   color: #fff;
   gap: 40px;
+  align-items: center;
 }
 
-.button {
+.hamburger {
   display: none;
 }
 
+.close {
+  display: none;
+}
+
+/* archive サブメニュー */
+.archiveItem {
+  position: relative;
+}
+
+.archiveToggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  font-size: 12px;
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+}
+
+.subItems {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background-color: var(--color-bg-painted);
+  border-radius: 4px;
+  padding: 8px 0;
+  min-width: 100px;
+  list-style: none;
+  margin: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.subItems li a {
+  display: block;
+  padding: 8px 16px;
+  color: var(--color-text-unpainted);
+  white-space: nowrap;
+}
+
+.subItems li a:hover {
+  opacity: 0.7;
+}
+
+/* ===== モバイル：右から引き出しドロワー ===== */
 @media (max-width: 640px) {
+  /* 背景オーバーレイ */
+  .backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+  }
+
+  /* ドロワー本体 */
   .nav {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 75vw;
+    max-width: 300px;
+    background-color: var(--color-bg-painted);
+    color: var(--color-text-unpainted);
+    padding: 64px 32px 40px;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
   }
 
   .nav.open {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--color-bg-painted);
-    color: var(--color-text-unpainted);
-    padding: 24px 16px;
+    transform: translateX(0);
   }
 
   .items {
     flex-direction: column;
-    gap: 24px;
+    align-items: flex-start;
+    gap: 28px;
+    font-size: 1.1rem;
   }
 
-  .button {
+  /* 閉じるボタン */
+  .close {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* ハンバーガーボタン */
+  .hamburger {
     display: flex;
     background: none;
     border: none;
     cursor: pointer;
   }
 
-  .close {
-    position: absolute;
-    top: 24px;
-    right: 16px;
+  /* サブメニューはインライン展開 */
+  .subItems {
+    position: static;
+    background: none;
+    box-shadow: none;
+    padding: 8px 0 0 16px;
+    border-radius: 0;
+  }
+
+  .subItems li a {
+    padding: 6px 0;
+    color: inherit;
   }
 }

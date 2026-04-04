@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
+import OpeningAnimation from "./_components/OpeningAnimation";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://black-market-shakujii.com"),
@@ -24,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
-        {" "}
+        <OpeningAnimation />
         <Header />
         {children}
         <Footer />

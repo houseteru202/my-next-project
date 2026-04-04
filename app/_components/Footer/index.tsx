@@ -16,6 +16,9 @@ export default function Footer() {
             <Link href="/members">members</Link>
           </li>
           <li className={styles.item}>
+            <Link href="/archive/vol4">archive</Link>
+          </li>
+          <li className={styles.item}>
             <Link
               href="https://www.instagram.com/black_market_shakujii/?igsh=MWlqb3B2OXhjZ2M1MQ%3D%3D#"
               target="_blank"

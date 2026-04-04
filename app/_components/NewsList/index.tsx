@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import cx from "classnames";
 
 import styles from "./index.module.css";
 import Category from "../Category";
@@ -8,34 +9,36 @@ import { News } from "@/app/_libs/microcms";
 
 type Props = {
   news: News[];
+  layout?: "list" | "scroll";
+  moreHref?: string;
 };
 
-export default function NewsList({ news }: Props) {
+export default function NewsList({ news, layout = "list", moreHref }: Props) {
   if (news.length === 0) {
     return <p>記事がありません。</p>;
   }
   return (
-    <ul>
+    <ul className={cx(styles.list, layout === "scroll" && styles.scrollList)}>
       {news.map((article) => (
-        <li key={article.id} className={styles.list}>
+        <li key={article.id} className={cx(styles.item, layout === "scroll" && styles.scrollItem)}>
           <Link href={`/news/${article.id}`} className={styles.link}>
-            {article.thumbnail ? (
-              <Image
-                src={article.thumbnail.url}
-                alt=""
-                className={styles.image}
-                width={article.thumbnail.width}
-                height={article.thumbnail.height}
-              />
-            ) : (
-              <Image
-                className={styles.image}
-                src="/no-image.png"
-                alt="No Image"
-                width={1200}
-                height={630}
-              />
-            )}
+            <div className={styles.imageWrapper}>
+              {article.thumbnail ? (
+                <Image
+                  src={article.thumbnail.url}
+                  alt=""
+                  fill
+                  className={styles.image}
+                />
+              ) : (
+                <Image
+                  src="/no-image.png"
+                  alt="No Image"
+                  fill
+                  className={styles.image}
+                />
+              )}
+            </div>
             <dl className={styles.content}>
               <dt className={styles.title}>{article.title}</dt>
               <dd className={styles.meta}>
@@ -46,6 +49,13 @@ export default function NewsList({ news }: Props) {
           </Link>
         </li>
       ))}
+      {layout === "scroll" && moreHref && (
+        <li className={cx(styles.scrollItem, styles.moreItem)}>
+          <Link href={moreHref} className={styles.moreLink}>
+            <span className={styles.moreText}>read more</span>
+          </Link>
+        </li>
+      )}
     </ul>
   );
 }

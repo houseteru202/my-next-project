@@ -11,6 +11,13 @@ export type Menber = {
   profile: string;
   item: string;
   image: MicroCMSImage;
+  category: "food" | "service" | "workshop" | "shop";
+  vol4: boolean;
+  vol5: boolean;
+} & MicroCMSListContent;
+
+export type ArchiveImage = {
+  imageList: MicroCMSImage[];
 } & MicroCMSListContent;
 
 export type Category = {
@@ -56,6 +63,14 @@ export const getMembersList = async (queries?: MicroCMSQueries) => {
 export const getNewsList = async (queries?: MicroCMSQueries) => {
   const listData = await client.getList<News>({
     endpoint: "news",
+    queries,
+  });
+  return listData;
+};
+
+export const getArchive2025Images = async (queries?: MicroCMSQueries) => {
+  const listData = await client.getList<ArchiveImage>({
+    endpoint: "archive2025",
     queries,
   });
   return listData;

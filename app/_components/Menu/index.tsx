@@ -8,27 +8,47 @@ import styles from "./index.module.css";
 
 export default function Menu() {
   const [isOpen, setOpen] = useState<boolean>(false);
+  const [isArchiveOpen, setArchiveOpen] = useState<boolean>(false);
   const open = () => setOpen(true);
-  const close = () => setOpen(false);
+  const close = () => {
+    setOpen(false);
+    setArchiveOpen(false);
+  };
 
   return (
-    <div>
+    <>
+      {/* 背景オーバーレイ：タップで閉じる */}
+      {isOpen && <div className={styles.backdrop} onClick={close} />}
+
       <nav className={cx(styles.nav, isOpen && styles.open)}>
+        <button className={styles.close} onClick={close}>
+          <Image src="/close.svg" alt="閉じる" width={24} height={24} priority />
+        </button>
         <ul className={styles.items}>
-          {/* <li>
-            <Link href="/about" onClick={close}>
-              about
-            </Link>
-          </li> */}
           <li>
-            <Link href="/news" onClick={close}>
-              news
-            </Link>
+            <Link href="/" onClick={close}>top</Link>
           </li>
           <li>
-            <Link href="/members" onClick={close}>
-              members
-            </Link>
+            <Link href="/news" onClick={close}>news</Link>
+          </li>
+          <li>
+            <Link href="/members" onClick={close}>members</Link>
+          </li>
+          <li className={styles.archiveItem}>
+            <button
+              className={styles.archiveToggle}
+              onClick={() => setArchiveOpen((v) => !v)}
+            >
+              archive
+              <span className={cx(styles.arrow, isArchiveOpen && styles.arrowOpen)}>▾</span>
+            </button>
+            {isArchiveOpen && (
+              <ul className={styles.subItems}>
+                <li>
+                  <Link href="/archive/vol4" onClick={close}>vol.4</Link>
+                </li>
+              </ul>
+            )}
           </li>
           <li>
             <Link
@@ -40,19 +60,11 @@ export default function Menu() {
             </Link>
           </li>
         </ul>
-        <button className={cx(styles.button, styles.close)} onClick={close}>
-          <Image
-            src="/close.svg"
-            alt="閉じる"
-            width={24}
-            height={24}
-            priority
-          />
-        </button>
       </nav>
-      <button className={styles.button} onClick={open}>
+
+      <button className={styles.hamburger} onClick={open}>
         <Image src="/menu.svg" alt="メニュー" width={24} height={24} />
       </button>
-    </div>
+    </>
   );
 }
