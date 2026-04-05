@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import styles from "./index.module.css";
 import type { MicroCMSImage } from "microcms-js-sdk";
 
