@@ -20,6 +20,10 @@ export type ArchiveImage = {
   imageList: MicroCMSImage[];
 } & MicroCMSListContent;
 
+export type ShopImage = {
+  imagelist: MicroCMSImage[];
+} & MicroCMSListContent;
+
 export type Category = {
   name: string;
 };
@@ -63,6 +67,14 @@ export const getMembersList = async (queries?: MicroCMSQueries) => {
 export const getNewsList = async (queries?: MicroCMSQueries) => {
   const listData = await client.getList<News>({
     endpoint: "news",
+    queries,
+  });
+  return listData;
+};
+
+export const getShopImages = async (queries?: MicroCMSQueries) => {
+  const listData = await client.getList<ShopImage>({
+    endpoint: "shopimage",
     queries,
   });
   return listData;

@@ -16,6 +16,7 @@ export default async function Vol4Page() {
       filters: "vol4[equals]true",
     }),
   ]);
+  membersData.contents.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
 
   return (
     <div className={styles.container}>
@@ -62,6 +63,7 @@ export default async function Vol4Page() {
                     src={member.image.url}
                     alt={member.name}
                     fill
+                    sizes="(max-width: 640px) calc(50vw - 38px), (max-width: 920px) calc(50vw - 136px), 332px"
                     className={styles.memberImage}
                   />
                 </div>

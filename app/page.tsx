@@ -1,7 +1,12 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { getNewsList, getMembersList } from "@/app/_libs/microcms";
+import {
+  getNewsList,
+  getMembersList,
+  getShopImages,
+} from "@/app/_libs/microcms";
+import GallerySlider from "./_components/GallerySlider";
 import { TOP_NEWS_LIMIT, MEMBERS_LIST_LIMIT } from "@/app/_constants";
 import NewsList from "./_components/NewsList";
 
@@ -13,16 +18,19 @@ const CATEGORIES = [
 ] as const;
 
 export default async function Home() {
-  const [newsData, membersData] = await Promise.all([
+  const [newsData, membersData, shopImageData] = await Promise.all([
     getNewsList({ limit: TOP_NEWS_LIMIT }),
-    getMembersList({ limit: MEMBERS_LIST_LIMIT }),
+    getMembersList({ limit: MEMBERS_LIST_LIMIT, filters: "vol5[equals]true" }),
+    getShopImages({ limit: 100 }),
   ]);
+
+  const getCategory = (cat: unknown) => (Array.isArray(cat) ? cat[0] : cat);
 
   const membersByCategory = Object.fromEntries(
     CATEGORIES.map(({ key }) => [
       key,
-      membersData.contents.filter((m) => m.category === key),
-    ])
+      membersData.contents.filter((m) => getCategory(m.category) === key),
+    ]),
   );
 
   return (
@@ -34,6 +42,7 @@ export default async function Home() {
           src="/img-mv.jpg"
           alt=""
           fill
+          sizes="100vw"
           priority
         />
         <Image
@@ -58,11 +67,12 @@ export default async function Home() {
         <div className={styles.sectionInner}>
           <h2 className={styles.sectionTitle}>Event Information</h2>
           <p className={styles.sectionLead}>
-            BLACK MARKETは子供も大人も楽しめるネオ縁日。老舗銭湯たつの湯の駐車場で石神井界隈の個性豊かな店主達による年に一度のお祭り。
+            BLACK
+            MARKETは子供も大人も楽しめるネオ縁日。老舗銭湯たつの湯の駐車場で石神井界隈の個性豊かな店主達による年に一度のお祭り。
           </p>
           <dl className={styles.info}>
             <dt className={styles.infoTitle}>日程</dt>
-            <dd className={styles.infoDesc}>2026年 開催予定（詳細は近日公開）</dd>
+            <dd className={styles.infoDesc}>2026年05月10日（日）</dd>
           </dl>
           <dl className={styles.info}>
             <dt className={styles.infoTitle}>会場</dt>
@@ -73,46 +83,59 @@ export default async function Home() {
                 className={styles.mapLink}
               >
                 たつの湯
-                <Image src="/google-maps.png" alt="" width={18} height={18} priority />
+                <Image
+                  src="/google-maps.png"
+                  alt=""
+                  width={18}
+                  height={18}
+                  priority
+                />
               </a>
             </dd>
           </dl>
 
-          {/* 出展者カテゴリ別 */}
           {membersData.contents.length > 0 && (
-            <div className={styles.exhibitors}>
-              {CATEGORIES.map(({ key, label }) => {
-                const members = membersByCategory[key];
-                if (members.length === 0) return null;
-                return (
-                  <div key={key} className={styles.categoryBlock}>
-                    <h3 className={styles.categoryLabel}>{label}</h3>
-                    <ul className={styles.memberGrid}>
-                      {members.map((member) => (
-                        <li key={member.id}>
-                          <Link
-                            href={`/members#${member.id}`}
-                            className={styles.memberCard}
-                          >
-                            <div className={styles.memberImageWrapper}>
-                              <Image
-                                src={member.image.url}
-                                alt={member.name}
-                                fill
-                                className={styles.memberImage}
-                              />
-                            </div>
-                            <span className={styles.memberName}>{member.name}</span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                );
-              })}
-            </div>
+            <dl className={styles.info}>
+              <dt className={styles.infoTitle}>出店情報</dt>
+              <dd className={`${styles.infoDesc} ${styles.exhibitorInfo}`}>
+                {CATEGORIES.map(({ key, label }) => {
+                  const members = membersByCategory[key];
+                  if (members.length === 0) return null;
+                  return (
+                    <div key={key} className={styles.exhibitorInfoRow}>
+                      <span className={styles.exhibitorCategoryTag}>
+                        {label}
+                      </span>
+                      <div className={styles.exhibitorChips}>
+                        {members
+                          .filter((m) => m.item)
+                          .map((m) => (
+                            <span key={m.id} className={styles.itemChip}>
+                              {m.item}
+                            </span>
+                          ))}
+                      </div>
+                    </div>
+                  );
+                })}
+                <Link href="/members" className={styles.membersLink}>
+                  メンバー詳細を見る →
+                </Link>
+              </dd>
+            </dl>
           )}
         </div>
+
+        {(() => {
+          const images = shopImageData.contents.flatMap(
+            (item) => item.imagelist,
+          );
+          return images.length > 0 ? (
+            <div className={styles.shopGallery}>
+              <GallerySlider images={images} />
+            </div>
+          ) : null;
+        })()}
       </section>
 
       {/* Tatsunoyu */}

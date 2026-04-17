@@ -28,6 +28,7 @@ export default function NewsList({ news, layout = "list", moreHref }: Props) {
                   src={article.thumbnail.url}
                   alt=""
                   fill
+                  sizes="(max-width: 640px) 180px, 240px"
                   className={styles.image}
                 />
               ) : (
@@ -35,6 +36,7 @@ export default function NewsList({ news, layout = "list", moreHref }: Props) {
                   src="/no-image.png"
                   alt="No Image"
                   fill
+                  sizes="(max-width: 640px) 180px, 240px"
                   className={styles.image}
                 />
               )}

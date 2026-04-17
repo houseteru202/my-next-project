@@ -31,6 +31,7 @@ export default function GallerySlider({ images }: Props) {
               height={img.height}
               className={styles.image}
               draggable={false}
+              loading="eager"
             />
           </div>
         ))}

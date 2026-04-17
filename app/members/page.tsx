@@ -8,6 +8,7 @@ export default async function Page() {
     limit: MEMBERS_LIST_LIMIT,
     filters: "vol5[equals]true",
   });
+  data.contents.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
 
   return (
     <div className={styles.container}>
@@ -22,6 +23,7 @@ export default async function Page() {
                   src={member.image.url}
                   alt={member.name}
                   fill
+                  sizes="(max-width: 640px) calc(50vw - 40px), (max-width: 920px) calc(50vw - 136px), 324px"
                   className={styles.image}
                 />
               </div>

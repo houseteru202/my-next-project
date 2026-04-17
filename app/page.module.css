@@ -115,6 +115,52 @@
   gap: 4px;
 }
 
+/* ===== 出店情報 ===== */
+.exhibitorInfo {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.exhibitorInfoRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.exhibitorCategoryTag {
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-sub);
+}
+
+.exhibitorChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.itemChip {
+  font-size: 0.82rem;
+  background: var(--color-bg-sub);
+  padding: 3px 10px;
+  border-radius: 20px;
+  line-height: 1.6;
+}
+
+.membersLink {
+  display: inline-block;
+  font-size: 0.82rem;
+  background: var(--color-bg-painted);
+  color: var(--color-text-unpainted);
+  padding: 3px 14px;
+  border-radius: 20px;
+  margin-top: 4px;
+}
+
 /* ===== 出展者カテゴリ別 ===== */
 .exhibitors {
   margin-top: 48px;
@@ -177,6 +223,11 @@
   line-height: 1.4;
 }
 
+/* ===== ショップギャラリー ===== */
+.shopGallery {
+  margin-top: 48px;
+}
+
 /* ===== たつの湯 ===== */
 .horizontal {
   display: flex;
@@ -221,7 +272,7 @@
   }
 
   .horizontal {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 24px;
   }
 
