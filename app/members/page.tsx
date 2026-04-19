@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getMembersList } from "@/app/_libs/microcms";
 import { MEMBERS_LIST_LIMIT } from "@/app/_constants";
+import ItemGalleryModal from "@/app/_components/ItemGalleryModal";
 import styles from "./page.module.css";
 
 export default async function Page() {
@@ -42,9 +43,11 @@ export default async function Page() {
                   />
                   {member.name}
                 </a>
-                {member.item && (
+                {member.item && member.itemlist && member.itemlist.length > 0 ? (
+                  <ItemGalleryModal item={member.item} images={member.itemlist} />
+                ) : member.item ? (
                   <p className={styles.item}>{member.item}</p>
-                )}
+                ) : null}
                 <p className={styles.profile}>{member.profile}</p>
               </div>
             </li>

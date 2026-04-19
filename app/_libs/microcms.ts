@@ -10,6 +10,7 @@ export type Menber = {
   occupation: string;
   profile: string;
   item: string;
+  itemlist?: MicroCMSImage[];
   image: MicroCMSImage;
   category: "food" | "service" | "workshop" | "shop";
   vol4: boolean;

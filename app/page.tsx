@@ -72,7 +72,9 @@ export default async function Home() {
           </p>
           <dl className={styles.info}>
             <dt className={styles.infoTitle}>日程</dt>
-            <dd className={styles.infoDesc}>2026年05月10日（日）</dd>
+            <dd className={styles.infoDesc}>
+              2026年05月10日（日）10:00〜15:00
+            </dd>
           </dl>
           <dl className={styles.info}>
             <dt className={styles.infoTitle}>会場</dt>

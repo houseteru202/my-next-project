@@ -52,8 +52,13 @@
 }
 
 .item {
-  font-size: 0.85rem;
-  color: #555;
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.82rem;
+  background: var(--color-bg-sub);
+  padding: 3px 10px;
+  border-radius: 20px;
+  line-height: 1.6;
 }
 
 .profile {
