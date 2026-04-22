@@ -146,7 +146,7 @@ export default async function Home() {
           <div className={styles.textBlock}>
             <h2 className={styles.sectionTitle}>Tatsunoyu</h2>
             <p className={styles.sectionLead}>
-              1965年（昭和40年）より、東京練馬の片隅で薪と井戸水での仕込にこだわる公衆浴場。伝統の番台と熱めに沸かした大きな浴槽1つ。イベント当日は15時よりオープン。
+              1965年（昭和40年）より、東京練馬の片隅で薪と井戸水での仕込にこだわる公衆浴場。伝統の番台と熱めに沸かした大きな浴槽1つ。イベント当日は14:30よりオープン。
             </p>
             <dl className={styles.info}>
               <dt className={styles.infoTitle}>営業日</dt>
