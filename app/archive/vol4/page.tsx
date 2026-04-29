@@ -16,7 +16,9 @@ export default async function Vol4Page() {
       filters: "vol4[equals]true",
     }),
   ]);
-  membersData.contents.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
+  membersData.contents.sort((a, b) =>
+    a.name.localeCompare(b.name, undefined, { sensitivity: "base" }),
+  );
 
   return (
     <div className={styles.container}>
@@ -61,7 +63,7 @@ export default async function Vol4Page() {
                 <div className={styles.memberImageWrapper}>
                   <Image
                     src={member.image.url}
-                    alt={member.name}
+                    alt={member.imagealt}
                     fill
                     sizes="(max-width: 640px) calc(50vw - 38px), (max-width: 920px) calc(50vw - 136px), 332px"
                     className={styles.memberImage}
@@ -96,7 +98,9 @@ export default async function Vol4Page() {
         const images = gallery.contents.flatMap((item) => item.imageList);
         return images.length > 0 ? (
           <section className={styles.sectionFullBleed}>
-            <h2 className={`${styles.sectionTitle} ${styles.galleryHeading}`}>Photo Gallery</h2>
+            <h2 className={`${styles.sectionTitle} ${styles.galleryHeading}`}>
+              Photo Gallery
+            </h2>
             <GallerySlider images={images} />
           </section>
         ) : null;

@@ -9,7 +9,9 @@ export default async function Page() {
     limit: MEMBERS_LIST_LIMIT,
     filters: "vol5[equals]true",
   });
-  data.contents.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
+  data.contents.sort((a, b) =>
+    a.name.localeCompare(b.name, undefined, { sensitivity: "base" }),
+  );
 
   return (
     <div className={styles.container}>
@@ -22,7 +24,7 @@ export default async function Page() {
               <div className={styles.imageWrapper}>
                 <Image
                   src={member.image.url}
-                  alt={member.name}
+                  alt={member.imagealt}
                   fill
                   sizes="(max-width: 640px) calc(50vw - 40px), (max-width: 920px) calc(50vw - 136px), 324px"
                   className={styles.image}
@@ -43,8 +45,13 @@ export default async function Page() {
                   />
                   {member.name}
                 </a>
-                {member.item && member.itemlist && member.itemlist.length > 0 ? (
-                  <ItemGalleryModal item={member.item} images={member.itemlist} />
+                {member.item &&
+                member.itemlist &&
+                member.itemlist.length > 0 ? (
+                  <ItemGalleryModal
+                    item={member.item}
+                    images={member.itemlist}
+                  />
                 ) : member.item ? (
                   <p className={styles.item}>{member.item}</p>
                 ) : null}

@@ -40,7 +40,7 @@ export default async function Home() {
         <Image
           className={styles.heroBg}
           src="/img-mv.jpg"
-          alt=""
+          alt="練馬区石神井で開催されるネオ縁日お祭り「BLACK MARKET（ブラックマーケット）」"
           fill
           sizes="100vw"
           priority
@@ -174,7 +174,7 @@ export default async function Home() {
           <div className={styles.imageBlock}>
             <Image
               src="/tatsunoyu.jpg"
-              alt="たつの湯"
+              alt="練馬区石神井台にあるお祭り会場の老舗銭湯「たつの湯」の外観"
               width={960}
               height={960}
               className={styles.sectionImg}

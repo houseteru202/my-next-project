@@ -15,6 +15,7 @@ export type Menber = {
   category: "food" | "service" | "workshop" | "shop";
   vol4: boolean;
   vol5: boolean;
+  imagealt: string;
 } & MicroCMSListContent;
 
 export type ArchiveImage = {
@@ -91,7 +92,7 @@ export const getArchive2025Images = async (queries?: MicroCMSQueries) => {
 
 export const getNewsDetail = async (
   contentId: string,
-  queries?: MicroCMSQueries
+  queries?: MicroCMSQueries,
 ) => {
   const detailData = await client.getListDetail<News>({
     endpoint: "news",
